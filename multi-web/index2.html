@@ -1,33 +1,63 @@
 <!DOCTYPE html>
+
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Humanright</title>
     <style type="text/css">
-        body {
-            background-color: #D9D7D6;
-            margin: 0px;
-            bottom:0;
-
+        @font-face {
+            font-family: 'SanamDeklenchaya';
+            src: url('SanamDeklenchaya.eot') format('embedded-opentype'), url('SanamDeklenchaya.woff') format('woff'), url('SanamDeklenchaya.ttf') format('truetype'), url('SanamDeklenchaya.svg#SanamDeklenchaya') format('svg');
+            font-weight: normal;
+            font-style: normal;
         }
-        img.img1{
+        
+        body {
+            background-color: #bfebee;
+            margin: 0px;
+            bottom: 0;
+            font-family: 'SanamDeklenchaya' !important;
+            font-size: 100%;
+        }
+        
+        img.img1 {
             height: 200vh;
             width: 5vw;
             top: 0;
-            position:absolute;
+            position: absolute;
+            left: calc(67% - 20vw);
+            display: block;
         }
-        img.img2{
+        
+        img.img2 {
             top: 45%;
             height: 10vh;
             width: 3.5vw;
             position: fixed;
             z-index: 4;
-            left: 50.7vw;
+            display: block;
+            left: calc(67.7% - 20vw);
+        }
+        
+        div.left1 {
+            background-color: rgb(255, 255, 255);
+            width: 20%;
+            padding: 2%;
+            border: 1vw solid #ff9d60;
+            margin-top: 5vw;
+            margin-left: 10vw;
+            display: block;
         }
     </style>
 </head>
+
 <body>
     <center>
-    <img src="1.jpg" class="img1">
-    <img src="2.png" class="img2">
+        <img src="1.jpg" class="img1">
+        <img src="2.png" class="img2">
     </center>
+    <div class="left1">
+        สมัยเด็กๆเราอาจจะเคยเรียนเรื่อง “สิทธิเด็ก” ในวิชาสังคมศึกษา หรือวิชาหน้าที่พลเมืองตามหลักสูตรการเรียนการสอน
+    </div>
 </body>
+
 </html>
