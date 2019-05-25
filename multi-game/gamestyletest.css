@@ -1,8 +1,5 @@
 body {
     background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto!important;
-    background-size: cover;
     background-image: url("../game bg/1.0.jpg");
 }
 
@@ -60,37 +57,26 @@ a{
 }
 
 button{
-    top:300px;
     position: absolute;
     font-size: 25px;
-    padding: 14px 15px;
+    padding: 40px 100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    background-image: url("../button/forward.jpg");
     border: none;
-    color:darkblue;
     opacity: 0.9;
-    z-index: -4;
+    border-radius: 50px;
 }
 
-#but1{
+.but1{
     left: 30%;
-    margin-top: 3em;
+    margin-top: 30%;
+    background-image: url(../button/forward.png);
 }
+
 
 #but2{
     right: 30%;
     margin-top: 3em;
-}
-
-img{
-    margin-left: 65vw;
-    margin-top: 91vh;
-    opacity: 0.8;
-}
-
-img:hover{
-    color:red;
 }

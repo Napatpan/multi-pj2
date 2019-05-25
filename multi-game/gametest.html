@@ -5,33 +5,25 @@
     <link rel="stylesheet" type="text/css" href="gamestyletest.css">
     <script>
         function changeimg(){
-        var pume = document.getElementById('left');
+        var button = document.getElementById('next');
         var state = document.getElementById("state");
+        var choose = document.getElementById("state");
         switch(state.className) {
         case "state1":
             document.getElementById("state").setAttribute("class", "state2");
-            pume.style.display = "none";
             break;
         case "state2":
             document.getElementById("state").setAttribute("class", "state3");
+            button.style.display = "none";
             break;
         default:
             document.getElementById("state").setAttribute("class", "state1");
         }
-        
         }
     </script>
 </head>
 <body id="state">
-    <button onclick="changeimg()" src="../button/forward.jpg" id="left">
-
-      
+    <button onclick="changeimg()" src="../button/forward.jpg" id="next" class="but1">
     </button>
-    <div  class="state2">
-    <img  onclick="changeimg()"/>
-    </div>
-    <div  class="state3">
-    <img  onclick="changeimg()"/>
-    </div>
 </body>
 </html>

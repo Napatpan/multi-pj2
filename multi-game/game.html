@@ -5,25 +5,42 @@
     <link rel="stylesheet" type="text/css" href="gamestyle.css">
     <script>
         function changeimg(){
+        var button = document.getElementById('next');
         var state = document.getElementById("state");
-        if (state.className = "state1"){
+        var choose = document.getElementById("choose");
+        var choose2 = document.getElementById("choose2");
+        switch(state.className) {
+        case "state1":
             document.getElementById("state").setAttribute("class", "state2");
-        }
-        else if (state.className = "state2") {
+            break;
+        case "state2":
             document.getElementById("state").setAttribute("class", "state3");
+            break;
+        case "state3":
+            document.getElementById("state").setAttribute("class", "state4");
+            button.style.display = "none";
+            choose.style.display = "block";
+            choose2.style.display = "block";
+            break;
+        case "state4":
+            document.getElementById("state").setAttribute("class", "state5");
+            button.style.display = "block";
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            break;
+        default:
+            document.getElementById("state").setAttribute("class", "state1");
         }
+        function changeimg(){
         }
     </script>
 </head>
 <body id="state">
-    <div  class="state1">
-    <img src="../button/forward.png" onclick="changeimg()">
-    </div>
-    <div  class="state2">
-    <img src="../button/forward.png" onclick="changeimg()">
-    </div>
-    <div  class="state3">
-    <img src="../button/forward.png" onclick="changeimg()">
-    </div>
+    <button onclick="changeimg()" id="next" class="but1">
+    </button>
+    <button onclick="changeimg()" id="choose" class="but2">
+    </button>
+    <button onclick="changeimg()" id="choose2" class="but3">
+    </button>
 </body>
 </html>
