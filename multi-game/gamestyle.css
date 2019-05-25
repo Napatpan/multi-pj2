@@ -16,8 +16,14 @@ body {
     height: 100px;
     width: 100px;
     background-image: url("../game bg/2.0.jpg");
-    opacity: 0;
 }
+
+.state3{
+    height: 100px;
+    width: 100px;
+    background-image: url("../game bg/3.0.jpg");
+}
+
 
 h1{
     font-size:40px;

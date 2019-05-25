@@ -9,8 +9,8 @@
         if (state.className = "state1"){
             document.getElementById("state").setAttribute("class", "state2");
         }
-        else {
-            document.getElementById("state").setAttribute("class", "state1");
+        else if (state.className = "state2") {
+            document.getElementById("state").setAttribute("class", "state3");
         }
         }
     </script>
@@ -20,8 +20,9 @@
     <img src="../button/forward.png" onclick="changeimg()">
     </div>
     <div  class="state2">
-    <button id="but1"> <a href="right.html" > ใช้สิทธิ์ </a></button>
-    <button id="but2"> <a href="wrong.html" > ไม่ใช้สิทธิ์ </a></button>
+    <img src="../button/forward.png" onclick="changeimg()">
+    </div>
+    <div  class="state3">
     <img src="../button/forward.png" onclick="changeimg()">
     </div>
 </body>
