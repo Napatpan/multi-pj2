@@ -1,5 +1,7 @@
 body {
-    background-image: url("../backgroundGame/บ้าน.jpg");
+    background-image: url("../backgroundGame/บ้านแม่.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h1{

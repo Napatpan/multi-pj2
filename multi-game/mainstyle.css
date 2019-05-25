@@ -1,0 +1,49 @@
+body {
+    background-color: lightblue;
+}
+
+h1{
+    margin-top: 10%;
+    text-align: center;
+    font-size:50px;
+
+}
+
+.text{
+    text-align: center;
+    font-size:50px;
+}
+
+a{
+    font-size: 25px;
+    padding: 14px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+button{
+    position: absolute;
+    font-size: 25px;
+    padding: 14px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: skyblue;
+    border: none;
+    color: white;
+
+}
+
+#but1{
+    left: 46%;
+    bottom: 40%;
+}
+
+#but2{
+    left: 44.5%;
+    bottom: 30%;
+}
