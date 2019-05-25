@@ -5,24 +5,24 @@
     <link rel="stylesheet" type="text/css" href="gamestyle.css">
     <script>
         function changeimg(){
-        document.getElementById('sec1').style.backgroundImage = "url(../backgroundGame/บ้านแม่.jpg)"
+        var state = document.getElementById("state");
+        if (state.className = "state1"){
+            document.getElementById("state").setAttribute("class", "state2");
+        }
+        else {
+            document.getElementById("state").setAttribute("class", "state1");
+        }
         }
     </script>
 </head>
-<body id="sec1">
-    <h1><p>ซาร่าเป็นเด็กผู้หญิงอายุ 10 ปี เธออาศัยอยู่กับพ่อที่หมู่บ้านเล็กๆ
-    <br>พ่อของเธอมีนิสัยฉุนเฉียวอารมณ์รุนแรง ชอบทุบตีเธอเป็นประจำ
-    <br>อยู่มาวันหนึ่งพ่อของซาร่าคลุ้มคลั่งจากการดื่มสุรา ทำให้พ่อของ
-    <br>เธอลงมือทำร้ายเธออย่างหนักจนเกือบเสียชีวิตการกระทำครั้งนี้
-    <br>ของพ่อซาร่าเป็นการละเมิดสิทธิ์ในการมีชีวิต ซึ่งก็คือสิทธิที่ซาร่า
-    <br>สามารถมีชีวิตอยู่รอดและปลอดภัยเป็นสิทธิ์ที่ติดตัวมาตั้งแต่เกิด
-    <br>ตอนนี้ซาร่าสามารถใช้สิทธิที่จะได้รับการปกป้องคุ้มครองในการ
-    <br>ร้องเรียนหน่วยงานต่างๆให้เข้ารับการช่วยเหลือ
-    <br>ซ่าร่าจะใช้สิทธิ์นั้นหรือไม่?</p>
-    </h1>
+<body id="state">
+    <div  class="state1">
+    <img src="../button/forward.png" onclick="changeimg()">
+    </div>
+    <div  class="state2">
     <button id="but1"> <a href="right.html" > ใช้สิทธิ์ </a></button>
     <button id="but2"> <a href="wrong.html" > ไม่ใช้สิทธิ์ </a></button>
-    <button  onclick="changeimg()"> <a>เปลี่ยนรูป </a></button>
-
+    <img src="../button/forward.png" onclick="changeimg()">
+    </div>
 </body>
 </html>

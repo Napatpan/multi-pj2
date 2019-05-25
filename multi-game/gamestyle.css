@@ -1,5 +1,22 @@
 body {
-    background-image: url("../backgroundGame/บ้าน.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto!important;
+    background-size: cover;
+    background-image: url("../game bg/1.0.jpg");
+}
+
+.state1{
+    height: 100px;
+    width: 100px;
+    background-image: url("../game bg/1.0.jpg");
+}
+
+.state2{
+    height: 100px;
+    width: 100px;
+    background-image: url("../game bg/2.0.jpg");
+    opacity: 0;
 }
 
 h1{
@@ -58,4 +75,14 @@ button{
 #but2{
     right: 30%;
     margin-top: 3em;
+}
+
+img{
+    margin-left: 65vw;
+    margin-top: 91vh;
+    opacity: 0.8;
+}
+
+img:hover{
+    color:red;
 }
