@@ -1,6 +1,9 @@
 body {
     background-repeat: no-repeat;
     background-image: url("../game bg/1.0.jpg");
+    
+    height: 100vh;
+    width: 100%;
 }
 
 h1{
@@ -88,73 +91,65 @@ img{
 }
 
 .state1{
-    height: 100%;
-    width: 100%;
+    
     background-image: url("../game bg/1.0.jpg");
 }
 
 .state2{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/2.0.jpg");
 }
 
 .state3{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/3.0.jpg");
 }
 
 .state4{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/4.0.jpg");
 }
 
 .state5{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/4.1.0.jpg");
 }
 
 .state6{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/4.2.0..jpg");
 }
 
 .state7{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/4.1.1.jpg");
 }
 
 .state8{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/4.2.1.jpg");
 }
 
 .state9{
-        height: 100px;
-    width: 100px;
+        
     background-image: url("../game bg/4.1.2.jpg");
 }
 
 .state10{
-    height: 100px;
-    width: 100px;
+    
     background-image: url("../game bg/4.2.2.jpg");
 }
 
 .state11{
-    height: 100%;
-    width: 100%;
+    
     background-image: url("../game bg/4.2.2.jpg");
 }
 
 .state12{
-    height: 100vh;
-    width: 100vh;
+    
     background-image: url("../game bg/4.2.3.0.jpg");
+}
+.state13{
+    
+    background-image: url("../game bg/4.2.2.jpg");
 }
