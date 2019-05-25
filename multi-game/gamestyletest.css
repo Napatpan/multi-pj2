@@ -1,17 +1,30 @@
 body {
-    background-image: url("../backgroundGame/บ้าน.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto!important;
+    background-size: cover;
+    background-image: url("../game bg/1.0.jpg");
 }
 
 .state1{
     height: 100px;
     width: 100px;
-    background-color:red;
+    background-image: url("../game bg/1.0.jpg");
 }
+
 .state2{
     height: 100px;
     width: 100px;
-    background-color:blue;
+    background-image: url("../game bg/2.0.jpg");
 }
+
+.state3{
+    height: 100px;
+    width: 100px;
+    background-image: url("../game bg/3.0.jpg");
+}
+
+
 h1{
     font-size:40px;
     border: 5px solid;
@@ -47,6 +60,7 @@ a{
 }
 
 button{
+    top:300px;
     position: absolute;
     font-size: 25px;
     padding: 14px 15px;
@@ -54,10 +68,11 @@ button{
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    background-color: grey;
+    background-image: url("../button/forward.jpg");
     border: none;
     color:darkblue;
     opacity: 0.9;
+    z-index: -4;
 }
 
 #but1{
@@ -68,4 +83,14 @@ button{
 #but2{
     right: 30%;
     margin-top: 3em;
+}
+
+img{
+    margin-left: 65vw;
+    margin-top: 91vh;
+    opacity: 0.8;
+}
+
+img:hover{
+    color:red;
 }

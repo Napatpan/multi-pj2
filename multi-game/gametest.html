@@ -2,14 +2,15 @@
 <html>
 <head>
     <title> สิทธิเด็ก </title>
-    <link rel="stylesheet" type="text/css" href="gamestyle.css">
+    <link rel="stylesheet" type="text/css" href="gamestyletest.css">
     <script>
         function changeimg(){
-            
+        var pume = document.getElementById('left');
         var state = document.getElementById("state");
         switch(state.className) {
         case "state1":
             document.getElementById("state").setAttribute("class", "state2");
+            pume.style.display = "none";
             break;
         case "state2":
             document.getElementById("state").setAttribute("class", "state3");
@@ -22,14 +23,15 @@
     </script>
 </head>
 <body id="state">
-    <button  class="state1" onclick="changeimg()">
-    <img  >
+    <button onclick="changeimg()" src="../button/forward.jpg" id="left">
+
+      
     </button>
     <div  class="state2">
-    <img  onclick="changeimg()">
+    <img  onclick="changeimg()"/>
     </div>
     <div  class="state3">
-    <img  onclick="changeimg()">
+    <img  onclick="changeimg()"/>
     </div>
 </body>
 </html>
