@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
     <title> สิทธิเด็ก </title>
     <link rel="stylesheet" type="text/css" href="gamestyle.css">
     <script>
-        
+        window.setTimeout(myfunction,3000);
+                
+        function myfunction(){
+            var button = document.getElementById('next');
+        var state = document.getElementById("state");
+        var choose = document.getElementById("choose");
+        var choose2 = document.getElementById("choose2");
+        var webs = document.getElementById("web");
+        var res = document.getElementById("re");
+        var loadd = document.getElementById("loadd");
+        document.getElementById("state").setAttribute("class", "state1");
+        document.getElementById("next").setAttribute("class", "state1b");
+            button.style.display = "block";
+        document.getElementById("loadd").setAttribute("class", "loadd");
+        }
         function changeimg(){
         var button = document.getElementById('next');
         var state = document.getElementById("state");
@@ -12,6 +27,7 @@
         var choose2 = document.getElementById("choose2");
         var webs = document.getElementById("web");
         var res = document.getElementById("re");
+        
         
         switch(state.className) {
         case "state1":
@@ -252,20 +268,25 @@
             document.getElementById("state").setAttribute("class", "state1");
             document.getElementById("next").setAttribute("class", "state1b");
         }
+       
+       
         
         }
+       
     </script>
 </head>
-<body id="state">
-    <button onclick="changeimg()" id="next" class="state1b">
+<body id="state" class="loading">
+    <EMBED SRC="เพลงเกม.mp3" HIDDEN="True" AUTOSTART="Yes" LOOP="True">
+    <button onclick="changeimg()" id="next" class="loadingb" onmousedown="../sound/next.mp3">
     </button>
-    <button onclick="changeimg()" id="choose" class="but2">
+    <button onclick="changeimg()" id="choose" class="but2" onmousedown="../sound/yes.mp3">
     </button>
-    <button onclick="changenot()" id="choose2" class="but3">
+    <button onclick="changenot()" id="choose2" class="but3" onmousedown="../sound/no.mp3">
     </button>
-    <button id="web" class="but4"> <a href="../multi-web/index2.html">
+    <button id="web" class="but4" onmousedown="../sound/index.mp3"> <a href="../multi-web/index2.html">
     </a></button>
-    <button onclick="changeimg()" id="re" class="but4">
+    <button onclick="changeimg()" id="re" class="but4" onmousedown="../sound/index.mp3">
     </button>
+    <div id="loadd" class="abd"></div>
 </body>
 </html>

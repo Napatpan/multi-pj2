@@ -1,12 +1,77 @@
 body {
     background-repeat: no-repeat;
-    background-image: url("../game bg/1.0.jpg");
+
     -webkit-background-size: cover;
     background-size: cover;
     max-width: 100vw;
     height: auto!important;
 }
+#loadd{
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 100%, 90%);
+    position: absolute;
+    
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+.abd {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsl(0, 100%, 90%);
+  z-index: 99;
+}
+.abd:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border: 6px solid #f2f2f2;
+  border-top: 6px dotted #f2f2f2;
+  border-bottom: 6px dotted #f2f2f2;
+  border-radius: 50%;
+  animation: loading 2s infinite;
+}
+.abd:before {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  content: "Loading...";
+  position: absolute;
+  top: 57%;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
 
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadd{
+    bottom: 100vh;
+    animation: load 0.5s ;
+}
+@keyframes load{
+    0% {bottom: 0vh;}
+    100% {bottom: 100vh;}
+}
 h1 {
     font-size: 40px;
     border: 5px solid;
@@ -49,6 +114,7 @@ button {
     left: 65vw;
     top: 65vh;
     background-image: url(../button/forward.jpg);
+   
 }
 .state2b {
     left: 65vw;
@@ -373,4 +439,13 @@ img {
 .state25 {
     background-image: url("../game bg/จบแบบที่ 4.jpg");
 }
+.loadingb{
+    display: none;
+}
+.loading{
+    background-color: blanchedalmond;
+}
+
+
+
 
