@@ -6,7 +6,7 @@
     <title> Humanright </title>
     <script>
         var audio = new Audio();
-        audio.src = "index.mp3"
+        audio.src = "sound/index.mp3"
     </script>
     <style Type="text/css">
         @font-face {
@@ -15,67 +15,80 @@
             font-weight: normal;
             font-style: normal;
         }
-
+        
         body {
             top: 0%;
             background-image: url("bg-index/inbg.jpg");
+            background-attachment: fixed;
+            background-position: top center;
             background-size: cover;
-            background-repeat: no-repeat;
-            max-width: 100%;
-            height: auto!important;
+            width: 100vw;
+            height: 100vh;
             font-family: 'SanamDeklenchaya' !important;
-
         }
-        .start:hover{
+        
+        .start:hover {
             box-shadow: 0px 0px 5px black;
         }
-        .enter:hover{
+        
+        .enter:hover {
             box-shadow: 0px 0px 5px black;
         }
-
+        
         img.img1 {
             margin-top: 5%;
             height: auto;
-            width: 500px;
+            width: 30vw;
         }
-
-        .text {
-            text-align: center;
-            font-size: 50px;
-        }
-        svg{
-            background-image:none;
+        
+        svg {
+            background-image: none;
             background-size: cover;
-            height: 100%;
+            height: 5vh;
             z-index: -1;
             position: absolute;
         }
-
-
-
-        .start{
-            height: 80px;
-            margin-top: 8%;
+        
+        .start {
+            margin-top: 5%;
+            height: 9.7vh;
+            position: relative;
             display: inline-block;
+            left: 0;
+            width: 20.9vw;
         }
+        
         a {
-            height: 80px;
-            font-size: 4vh;
+            margin-top: 5%;
+            height: 9.7vh;
             text-align: center;
             text-decoration: none;
             cursor: pointer;
             border: none;
             color: white;
+            left: -12vw;
+            width: 21vw;
         }
-        .enter{
+        
+        .enter {
             display: inline-block;
+        }
+        
+        .img3 {
+            height: 9.7vh;
+            width: 21vw;
+        }
+        
+        .img4 {
+            height: 9.7vh;
+            width: 21vw;
         }
     </style>
 </head>
 
 <body>
-    <embed src="bg.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
-    <svg viewBox="0 0 100 60"path d="
+    <embed src="sound/bg.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
+    <svg viewBox="0 0 100 60" path d="
 M5, 5 c-2.5 -2.5,5 -2.5,0 0
 " stroke="hsl(348.3,100%,90%)" fill="hsl(348.3,100%,85.9%)" stroke-width="0.3">
 
@@ -337,10 +350,9 @@ M5, 5 c-2.5 -2.5,5 -2.5,0 0
     <center>
         <img class="img1" src="bg-index/logo.png"> <br/>
 
-    <a href="multi-game/game.html" target="_top" class="start"><img src="bg-index/s.png" onmouseenter="audio.play()"></a>
-    <br/>
-    <a href="multi-web/index2.html" class="enter"><img src="bg-index/e.png"
-    onmouseenter="audio.play()"></a>
+        <a href="multi-game/game.html" target="_top" class="start"><img class="img3"src="bg-index/s.png" onmouseenter="audio.play()""></a>
+        <br/>
+        <a href="multi-web/index2.html" class="enter"><img class="img4" src="bg-index/e.png" onmouseenter="audio.play()"></a>
     </center>
 </body>
 
