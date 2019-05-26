@@ -3,6 +3,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    margin: 0;
     background-image: url("../game bg/1.0.jpg");
 }
 
