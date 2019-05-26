@@ -6,7 +6,16 @@
     <link rel="stylesheet" type="text/css" href="gamestyle.css">
     <script>
         window.setTimeout(myfunction,3000);
-                
+        var bleep1 = new Audio();
+        bleep1.src = "next.mp3";
+        var bleep2 = new Audio();
+        bleep2.src = "yes.mp3";
+        var bleep3 = new Audio();
+        bleep3.src = "no.mp3";
+        var bleep4 = new Audio();
+        bleep4.src = "index.mp3";
+        var bleep5 = new Audio();
+        bleep5.src = "index.mp3";
         function myfunction(){
             var button = document.getElementById('next');
         var state = document.getElementById("state");
@@ -277,15 +286,15 @@
 </head>
 <body id="state" class="loading">
     <EMBED SRC="เพลงเกม.mp3" HIDDEN="True" AUTOSTART="Yes" LOOP="True">
-    <button onclick="changeimg()" id="next" class="loadingb" onmousedown="../sound/next.mp3">
+    <button onclick="changeimg()" id="next" class="loadingb" onmousedown="bleep1.play()">
     </button>
-    <button onclick="changeimg()" id="choose" class="but2" onmousedown="../sound/yes.mp3">
+    <button onclick="changeimg()" id="choose" class="but2" onmousedown="bleep2.play()">
     </button>
-    <button onclick="changenot()" id="choose2" class="but3" onmousedown="../sound/no.mp3">
+    <button onclick="changenot()" id="choose2" class="but3" onmousedown="bleep3.play()">
     </button>
-    <button id="web" class="but4" onmousedown="../sound/index.mp3"> <a href="../multi-web/index2.html">
+    <button id="web" class="but4" onmousedown="bleep4.play()"> <a href="../multi-web/index2.html">
     </a></button>
-    <button onclick="changeimg()" id="re" class="but4" onmousedown="../sound/index.mp3">
+    <button onclick="changeimg()" id="re" class="but4" onmousedown="bleep5.play()">
     </button>
     <div id="loadd" class="abd"></div>
 </body>
