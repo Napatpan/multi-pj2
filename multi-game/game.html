@@ -242,20 +242,21 @@
             document.getElementById("state").setAttribute("class", "state1");
             document.getElementById("next").setAttribute("class", "state1b");
         }
-        
+        var bleep = new Audio();
+        bleep.src = "bleep.m4a";
         }
     </script>
 </head>
 <body id="state">
-    <button onclick="changeimg()" id="next" class="state1b">
+    <button onclick="changeimg()" id="next" class="state1b" onmousedown="bleep.play()">
     </button>
-    <button onclick="changeimg()" id="choose" class="but2">
+    <button onclick="changeimg()" id="choose" class="but2" onmousedown="bleep.play()">
     </button>
-    <button onclick="changenot()" id="choose2" class="but3">
+    <button onclick="changenot()" id="choose2" class="but3" onmousedown="bleep.play()">
     </button>
-    <button id="web"> <a href="../multi-web/index2.html"> เข้าสู่เว็บไซต์
+    <button id="web" onmousedown="bleep.play()"> <a href="../multi-web/index2.html"> เข้าสู่เว็บไซต์
     </a></button>
-    <button onclick="changeimg()" id="re" class="but4">
+    <button onclick="changeimg()" id="re" class="but4" onmousedown="bleep.play()">
     </button>
 </body>
 </html>
