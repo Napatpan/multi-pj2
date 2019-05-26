@@ -45,14 +45,16 @@
             document.getElementById("state").setAttribute("class", "state1");
         }
         }
+        var bleep = new Audio();
+        bleep.src = "bleep.m4a";
     </script>
 </head>
 <body id="state">
-    <button onclick="changeimg()" id="next" class="but1">
+    <button onclick="changeimg()" id="next" class="but1" onmousedown="bleep.play()">
     </button>
-    <button onclick="changeimg()" id="choose" class="but2">
+    <button onclick="changeimg()" id="choose" class="but2" onmousedown="bleep.play()">
     </button>
-    <button onclick="changeimg()" id="choose2" class="but3">
+    <button onclick="changeimg()" id="choose2" class="but3" onmousedown="bleep.play()">
     </button>
 </body>
 </html>
