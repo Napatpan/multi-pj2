@@ -4,6 +4,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title> Humanright </title>
+    <script>
+        var audio = new Audio();
+        audio.src = "sound/index.mp3"
+    </script>
     <style Type="text/css">
         @font-face {
             font-family: 'SanamDeklenchaya';
@@ -333,9 +337,10 @@ M5, 5 c-2.5 -2.5,5 -2.5,0 0
     <center>
         <img class="img1" src="bg-index/logo.png"> <br/>
 
-    <a href="multi-game/game.html" target="_top" class="start"><img src="bg-index/s.png"></a>
+    <a href="multi-game/game.html" target="_top" class="start"><img src="bg-index/s.png" onmouseenter="audio.play()""></a>
     <br/>
-    <a href="multi-web/index2.html" class="enter"><img src="bg-index/e.png"></a>
+    <a href="multi-web/index2.html" class="enter"><img src="bg-index/e.png"
+    onmouseenter="audio.play()"></a>
     </center>
 </body>
 
