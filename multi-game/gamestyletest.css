@@ -1,29 +1,32 @@
 body {
     background-repeat: no-repeat;
     background-image: url("../game bg/1.0.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
-.state1{
+.state1 {
     height: 100px;
     width: 100px;
     background-image: url("../game bg/1.0.jpg");
 }
 
-.state2{
+.state2 {
     height: 100px;
     width: 100px;
     background-image: url("../game bg/2.0.jpg");
 }
 
-.state3{
+.state3 {
     height: 100px;
     width: 100px;
     background-image: url("../game bg/3.0.jpg");
 }
 
-
-h1{
-    font-size:40px;
+h1 {
+    font-size: 40px;
     border: 5px solid;
     border-radius: 10px;
     background-color: white;
@@ -33,20 +36,20 @@ h1{
     margin-top: 1.5em;
 }
 
-p{
+p {
     text-align: justify;
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
 
-.text{
+.text {
     text-align: center;
-    font-size:50px;
-        margin-left: 6em;
+    font-size: 50px;
+    margin-left: 6em;
     margin-right: 5em;
 }
 
-a{
+a {
     font-size: 25px;
     padding: 14px 15px;
     text-align: center;
@@ -56,7 +59,7 @@ a{
     color: white;
 }
 
-button{
+button {
     position: absolute;
     font-size: 25px;
     padding: 40px 100px;
@@ -69,14 +72,13 @@ button{
     border-radius: 50px;
 }
 
-.but1{
+.but1 {
     left: 30%;
     margin-top: 30%;
     background-image: url(../button/forward.png);
 }
 
-
-#but2{
+#but2 {
     right: 30%;
     margin-top: 3em;
 }

@@ -1,11 +1,14 @@
 body {
     background-image: url("../backgroundGame/บ้านแม่.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
-h1{
-    font-size:40px;
+h1 {
+    font-size: 40px;
     border: 5px solid;
     border-radius: 10px;
     background-color: white;
@@ -15,20 +18,20 @@ h1{
     margin-top: 1.5em;
 }
 
-p{
+p {
     text-align: justify;
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
 
-.text{
+.text {
     text-align: center;
-    font-size:50px;
-        margin-left: 6em;
+    font-size: 50px;
+    margin-left: 6em;
     margin-right: 5em;
 }
 
-a{
+a {
     font-size: 25px;
     padding: 14px 15px;
     text-align: center;
@@ -38,7 +41,7 @@ a{
     color: white;
 }
 
-button{
+button {
     position: absolute;
     font-size: 25px;
     padding: 14px 15px;
@@ -48,16 +51,16 @@ button{
     cursor: pointer;
     background-color: grey;
     border: none;
-    color:darkblue;
+    color: darkblue;
     opacity: 0.9;
 }
 
-#but1{
+#but1 {
     left: 30%;
     margin-top: 3em;
 }
 
-#but2{
+#but2 {
     right: 30%;
     margin-top: 3em;
 }
