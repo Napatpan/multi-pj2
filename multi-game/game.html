@@ -6,14 +6,24 @@
     <link rel="stylesheet" type="text/css" href="gamestyle.css">
     <script>
         window.setTimeout(myfunction,3000);
-        var next = new Audio();
-        next.src = "../sound/next.mp3"
-        var yes = new Audio();
-        yes.src = "../sound/yes.mp3"
-        var no = new Audio();
-        no.src = "../sound/no.mp3"
-        var index = new Audio();
-        index.src = "../sound/index.mp3"
+        var bleep1 = new Audio();
+        bleep1.src = "../sound/next.mp3";
+        var bleep2 = new Audio();
+        bleep2.src = "../sound/yes.mp3";
+        var bleep3 = new Audio();
+        bleep3.src = "../sound/no.mp3";
+        var bleep4 = new Audio();
+        bleep4.src = "../sound/index.mp3";
+        var bleep5 = new Audio();
+        bleep5.src = "../sound/index.mp3";
+        var end1 = new Audio();
+        end1.src = "end1.mp3";
+        var end2 = new Audio();
+        end2.src = "end2.mp3";
+        var end3 = new Audio();
+        end3.src = "end3.mp3";
+        var end4 = new Audio();
+        end4.src = "end4.mp3";
         function myfunction(){
             var button = document.getElementById('next');
         var state = document.getElementById("state");
@@ -34,23 +44,23 @@
         var choose2 = document.getElementById("choose2");
         var webs = document.getElementById("web");
         var res = document.getElementById("re");
-
-
+        
+        
         switch(state.className) {
         case "state1":
             document.getElementById("state").setAttribute("class", "state2");
 
-            document.getElementById("next").setAttribute("class", "state2b");
+            document.getElementById("next").setAttribute("class", "state2b");            
             break;
         case "state2":
             document.getElementById("state").setAttribute("class", "state3");
 
-            document.getElementById("next").setAttribute("class", "state3b");
+            document.getElementById("next").setAttribute("class", "state3b");            
             break;
         case "state3":
             document.getElementById("state").setAttribute("class", "state4");
 
-            document.getElementById("next").setAttribute("class", "state4b");
+            document.getElementById("next").setAttribute("class", "state4b");            
             button.style.display = "none";
             choose.style.display = "block";
             choose2.style.display = "block";
@@ -58,7 +68,7 @@
         case "state4":
             document.getElementById("state").setAttribute("class", "state5");
 
-            document.getElementById("next").setAttribute("class", "state5b");
+            document.getElementById("next").setAttribute("class", "state5b");            
             button.style.display = "block";
             choose.style.display = "none";
             choose2.style.display = "none";
@@ -66,17 +76,17 @@
         case "state5":
             document.getElementById("state").setAttribute("class", "state7");
 
-            document.getElementById("next").setAttribute("class", "state7b");
+            document.getElementById("next").setAttribute("class", "state7b");            
             break;
         case "state6":
             document.getElementById("state").setAttribute("class", "state8");
 
-            document.getElementById("next").setAttribute("class", "state8b");
+            document.getElementById("next").setAttribute("class", "state8b");            
             break;
         case "state7":
             document.getElementById("state").setAttribute("class", "state9");
 
-            document.getElementById("next").setAttribute("class", "state9b");
+            document.getElementById("next").setAttribute("class", "state9b");            
             break;
         case "state8":
             document.getElementById("state").setAttribute("class", "state10");
@@ -106,7 +116,7 @@
         case "state12":
             document.getElementById("state").setAttribute("class", "state5");
 
-            document.getElementById("next").setAttribute("class", "state5b");
+            document.getElementById("next").setAttribute("class", "state5b");      
             button.style.display = "block";
             choose.style.display = "none";
             choose2.style.display = "none";
@@ -114,12 +124,12 @@
         case "state13":
             document.getElementById("state").setAttribute("class", "state16");
             document.getElementById("next").setAttribute("class", "state16b");
-
+            
             break;
         case "state14":
             document.getElementById("state").setAttribute("class", "state17");
             document.getElementById("next").setAttribute("class", "state17b");
-
+            
             break;
         case "state15":
             document.getElementById("state").setAttribute("class", "state18");
@@ -138,14 +148,15 @@
         case "state17":
             document.getElementById("state").setAttribute("class", "state21");
             document.getElementById("next").setAttribute("class", "state21b");
-
+           
             break;
         case "state18":
             document.getElementById("state").setAttribute("class", "state22");
             document.getElementById("next").setAttribute("class", "state22b");
-
+           
             break;
         case "state20":
+            end1.play();
             document.getElementById("state").setAttribute("class", "state23");
             document.getElementById("next").setAttribute("class", "state23b");
             document.getElementById("re").setAttribute("class", "state23r");
@@ -156,8 +167,9 @@
             webs.style.display = "block";
             res.style.display = "block";
             break;
-
+        
         case "state22":
+            end4.play();
             document.getElementById("state").setAttribute("class", "state25");
             document.getElementById("next").setAttribute("class", "state25b");
             document.getElementById("re").setAttribute("class", "state25r");
@@ -167,6 +179,7 @@
             res.style.display = "block";
             break;
         case "state21":
+            end2.play();
             document.getElementById("state").setAttribute("class", "state24");
             document.getElementById("next").setAttribute("class", "state24b");
             document.getElementById("re").setAttribute("class", "state24r");
@@ -178,7 +191,7 @@
         case "state23":
                 document.getElementById("state").setAttribute("class", "state1");
 
-                document.getElementById("next").setAttribute("class", "state1b");
+                document.getElementById("next").setAttribute("class", "state1b");                
                 webs.style.display = "none";
                 res.style.display = "none";
                 button.style.display = "block";
@@ -186,7 +199,7 @@
         case "state24":
                 document.getElementById("state").setAttribute("class", "state1");
 
-                document.getElementById("next").setAttribute("class", "state1b");
+                document.getElementById("next").setAttribute("class", "state1b");                
                 webs.style.display = "none";
                 res.style.display = "none";
                 button.style.display = "block";
@@ -194,7 +207,7 @@
         case "state25":
                 document.getElementById("state").setAttribute("class", "state1");
 
-                document.getElementById("next").setAttribute("class", "state1b");
+                document.getElementById("next").setAttribute("class", "state1b");                
                 webs.style.display = "none";
                 res.style.display = "none";
                 button.style.display = "block";
@@ -202,7 +215,7 @@
         case "state19":
                 document.getElementById("state").setAttribute("class", "state1");
 
-                document.getElementById("next").setAttribute("class", "state1b");
+                document.getElementById("next").setAttribute("class", "state1b");                
                 webs.style.display = "none";
                 res.style.display = "none";
                 button.style.display = "block";
@@ -217,7 +230,7 @@
         default:
             document.getElementById("state").setAttribute("class", "state1");
             document.getElementById("next").setAttribute("class", "state1b");
-
+        
         }
         }
 
@@ -250,8 +263,9 @@
             choose2.style.display = "none";
             button.style.display = "block";
             break;
-
+        
         case "state15":
+            end3.play();
             document.getElementById("state").setAttribute("class", "state19");
             document.getElementById("next").setAttribute("class", "state19b");
             document.getElementById("re").setAttribute("class", "state19r");
@@ -262,6 +276,7 @@
             res.style.display = "block";
             break;
         case "state20":
+            end2.play();
             document.getElementById("state").setAttribute("class", "state24");
             document.getElementById("next").setAttribute("class", "state24b");
             document.getElementById("re").setAttribute("class", "state24r");
@@ -275,24 +290,24 @@
             document.getElementById("state").setAttribute("class", "state1");
             document.getElementById("next").setAttribute("class", "state1b");
         }
-
-
-
+       
+       
+        
         }
-
+       
     </script>
 </head>
 <body id="state" class="loading">
-    <EMBED SRC="bgm song.mp3" HIDDEN="True" AUTOSTART="Yes" LOOP="True">
-    <button onclick="changeimg()" id="next" class="loadingb" onmousedown="next.play()">
+    <EMBED SRC="เพลงเกม.mp3" HIDDEN="True" AUTOSTART="Yes" LOOP="True">
+    <button onclick="changeimg()" id="next" class="loadingb" onmousedown="bleep1.play()">
     </button>
-    <button onclick="changeimg()" id="choose" class="but2" onmousedown="yes.play()">
+    <button onclick="changeimg()" id="choose" class="but2" onmousedown="bleep2.play()">
     </button>
-    <button onclick="changenot()" id="choose2" class="but3" onmousedown="no.play()">
+    <button onclick="changenot()" id="choose2" class="but3" onmousedown="bleep3.play()">
     </button>
-    <button id="web" class="but4" onmousedown="index.play()"> <a href="../multi-web/index2.html">
+    <button id="web" class="but4" onmousedown="bleep4.play()"> <a href="../multi-web/index2.html">
     </a></button>
-    <button onclick="changeimg()" id="re" class="but4" onmousedown="index.play()">
+    <button onclick="changeimg()" id="re" class="but4" onmousedown="bleep5.play()">
     </button>
     <div id="loadd" class="abd"></div>
 </body>
