@@ -3,9 +3,8 @@ body {
     background-image: url("../game bg/1.0.jpg");
     -webkit-background-size: cover;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    margin:0;
+    max-width: 100vw;
+    height: auto!important;
 }
 
 h1 {
@@ -32,19 +31,13 @@ p {
     margin-right: 5em;
 }
 
-a {
-    font-size: 25px;
-    padding: 14px 15px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    color: white;
-}
+
 
 button {
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    padding: 40px 100px;
+    padding: 4vh 5vw;
     display: inline-block;
     cursor: pointer;
     border: none;
@@ -186,6 +179,12 @@ button {
 #next:hover {
     background-image: url(../button/forward2.jpg);
 }
+#re:hover {
+    background-image: url(../button/again2.jpg);
+}
+#web:hover {
+    background-image: url(../button/enter2.jpg);
+}
 
 .but2 {
     margin-left: 35vw;
@@ -206,11 +205,64 @@ button {
 .but3:hover {
     background-image: url(../button/no2.jpg);
 }
+.but4 {
+    padding: 7vh 50vw;
+}
 
 img {
     margin-left: 65vw;
     margin-top: 91vh;
     opacity: 0.8;
+}
+
+.state19r {
+    left: 45vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 5vh 10vw;
+    
+}
+.state19w {
+    left: 70vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 5vh 10vw;
+}
+.state23r {
+    left: 15vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 5vh 10vw;
+}
+.state23w {
+    left: 40vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 5vh 10vw;
+}
+.state24r {
+    left: 27vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 5vh 10vw;
+}
+.state24w {
+    left: 55vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 5vh 10vw;
+}
+.state25r {
+    left: 45vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 5vh 10vw;
+}
+.state25w {
+    left: 70vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 5vh 10vw;
 }
 
 #choose,
@@ -219,16 +271,7 @@ img {
 #web{
     display: none;
 }
-#re {
-    left: 200px;
-    
-    background-color: red;
-}
-#web {
-    left: 400px;
-    
-    background-color: blue;
-}
+
 .state1 {
     background-image: url("../game bg/1.0.jpg");
 }
