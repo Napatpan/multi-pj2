@@ -1,0 +1,370 @@
+body {
+    background-repeat: no-repeat;
+    background-image: url("../game bg/1.0.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    border: 5px solid;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.8;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 1.5em;
+}
+
+p {
+    text-align: justify;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.text {
+    text-align: center;
+    font-size: 50px;
+    margin-left: 6em;
+    margin-right: 5em;
+}
+
+
+
+button {
+    position: absolute;
+    padding: 40px 100px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    border-radius: 30px
+}
+
+.state1b {
+    left: 65vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state2b {
+    left: 65vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state3b {
+    left: 65vw;
+    top: 63vh;
+    background-image: url(../button/forward.jpg);
+}
+.state4b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state5b {
+    left: 60vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state6b {
+    left: 60vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state7b {
+    left: 60vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+.state8b {
+    left: 60vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state9b {
+    left: 60vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+.state10b {
+    left: 62vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+.state11b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state12b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state13b {
+    left: 65vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state14b {
+    left: 65vw;
+    top: 63vh;
+    background-image: url(../button/forward.jpg);
+}
+.state15b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state16b {
+    left: 65vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state17b {
+    left: 63vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+.state18b {
+    left: 65vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+.state19b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state20b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state21b {
+    left: 65vw;
+    top: 63vh;
+    background-image: url(../button/forward.jpg);
+}
+.state22b {
+    left: 65vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+.state23b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state24b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+.state25b {
+    left: 45vw;
+    top: 65vh;
+    background-image: url(../button/forward.jpg);
+}
+
+.stateexb {
+    left: 65vw;
+    top: 60vh;
+    background-image: url(../button/forward.jpg);
+}
+#next:hover {
+    background-image: url(../button/forward2.jpg);
+}
+#re:hover {
+    background-image: url(../button/again2.jpg);
+}
+#web:hover {
+    background-image: url(../button/enter2.jpg);
+}
+
+.but2 {
+    margin-left: 35vw;
+    margin-top: 50vh;
+    background-image: url(../button/yes.jpg);
+}
+
+.but2:hover {
+    background-image: url(../button/yes2.jpg);
+}
+
+.but3 {
+    margin-left: 50vw;
+    margin-top: 50vh;
+    background-image: url(../button/no.jpg);
+}
+
+.but3:hover {
+    background-image: url(../button/no2.jpg);
+}
+
+img {
+    margin-left: 65vw;
+    margin-top: 91vh;
+    opacity: 0.8;
+}
+
+.state19r {
+    left: 45vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 40px 150px;
+}
+.state19w {
+    left: 70vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 40px 150px;
+}
+.state23r {
+    left: 15vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 40px 150px;
+}
+.state23w {
+    left: 40vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 40px 150px;
+}
+.state24r {
+    left: 27vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 40px 150px;
+}
+.state24w {
+    left: 55vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 40px 150px;
+}
+.state25r {
+    left: 45vw;
+    top: 90vh;
+    background-image: url(../button/again.jpg);
+    padding: 40px 150px;
+}
+.state25w {
+    left: 70vw;
+    top: 90vh;
+    background-image: url(../button/enter.jpg);
+    padding: 40px 150px;
+}
+
+#choose,
+#choose2,
+#re,
+#web{
+    display: none;
+}
+
+.state1 {
+    background-image: url("../game bg/1.0.jpg");
+}
+
+.state2 {
+    background-image: url("../game bg/2.0.jpg");
+}
+
+.state3 {
+    background-image: url("../game bg/3.0.jpg");
+}
+
+.state4 {
+    background-image: url("../game bg/4.0.jpg");
+}
+
+.state5 {
+    background-image: url("../game bg/4.1.0.jpg");
+}
+
+.state6 {
+    background-image: url("../game bg/4.2.0.jpg");
+}
+
+.state7 {
+    background-image: url("../game bg/4.1.1.jpg");
+}
+
+.state8 {
+    background-image: url("../game bg/4.2.1.jpg");
+}
+
+.state9 {
+    background-image: url("../game bg/4.1.2.jpg");
+}
+
+.state10 {
+    background-image: url("../game bg/4.2.2.jpg");
+}
+
+.state11 {
+    background-image: url("../game bg/4.1.3.0.jpg");
+}
+
+.state12 {
+    background-image: url("../game bg/4.2.3.0.jpg");
+}
+
+.state13 {
+    background-image: url("../game bg/4.1.3.1.0.jpg");
+}
+
+.state14 {
+    background-image: url("../game bg/4.1.3.2.0.jpg");
+}
+.stateex{
+    background-image: url("../game bg/4.2.3.1.0.jpg");
+}
+.state15 {
+    background-image: url("../game bg/4.1.3.0.jpg");
+}
+
+.state16 {
+    background-image: url("../game bg/4.1.3.1.1.jpg");
+}
+
+.state17 {
+    background-image: url("../game bg/4.1.3.2.1.jpg");
+}
+
+.state18 {
+    background-image: url("../game bg/4.2.3.1.1.1.jpg");
+}
+
+.state19 {
+    background-image: url("../game bg/จบแบบที่ 3.jpg");
+}
+
+.state20 {
+    background-image: url("../game bg/4.1.3.1.2.jpg");
+}
+
+.state21 {
+    background-image: url("../game bg/4.1.3.2.2.jpg");
+}
+
+.state22 {
+    background-image: url("../game bg/4.2.3.1.1.2.jpg");
+}
+
+.state23 {
+    background-image: url("../game bg/จบแบบที่ 1.jpg");
+}
+
+.state24 {
+    background-image: url("../game bg/จบแบบที่ 2.jpg");
+}
+
+.state25 {
+    background-image: url("../game bg/จบแบบที่ 4.jpg");
+}
+

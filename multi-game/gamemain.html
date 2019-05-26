@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> สิทธิเด็ก </title>
+    <link rel="stylesheet" type="text/css" href="gamestyle.css">
+    <script>
+        
+        function changeimg(){
+        var button = document.getElementById('next');
+        var state = document.getElementById("state");
+        var choose = document.getElementById("choose");
+        var choose2 = document.getElementById("choose2");
+        var webs = document.getElementById("web");
+        var res = document.getElementById("re");
+        
+        switch(state.className) {
+        case "state1":
+            document.getElementById("state").setAttribute("class", "state2");
+
+            document.getElementById("next").setAttribute("class", "state2b");            
+            break;
+        case "state2":
+            document.getElementById("state").setAttribute("class", "state3");
+
+            document.getElementById("next").setAttribute("class", "state3b");            
+            break;
+        case "state3":
+            document.getElementById("state").setAttribute("class", "state4");
+
+            document.getElementById("next").setAttribute("class", "state4b");            
+            button.style.display = "none";
+            choose.style.display = "block";
+            choose2.style.display = "block";
+            break;
+        case "state4":
+            document.getElementById("state").setAttribute("class", "state5");
+
+            document.getElementById("next").setAttribute("class", "state5b");            
+            button.style.display = "block";
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            break;
+        case "state5":
+            document.getElementById("state").setAttribute("class", "state7");
+
+            document.getElementById("next").setAttribute("class", "state7b");            
+            break;
+        case "state6":
+            document.getElementById("state").setAttribute("class", "state8");
+
+            document.getElementById("next").setAttribute("class", "state8b");            
+            break;
+        case "state7":
+            document.getElementById("state").setAttribute("class", "state9");
+
+            document.getElementById("next").setAttribute("class", "state9b");            
+            break;
+        case "state8":
+            document.getElementById("state").setAttribute("class", "state10");
+            document.getElementById("next").setAttribute("class", "state10b");
+            break;
+        case "state9":
+            document.getElementById("state").setAttribute("class", "state11");
+            document.getElementById("next").setAttribute("class", "state11b");
+            button.style.display = "none";
+            choose.style.display = "block";
+            choose2.style.display = "block";
+            break;
+        case "state10":
+            document.getElementById("state").setAttribute("class", "state12");
+            document.getElementById("next").setAttribute("class", "state12b");
+            button.style.display = "none";
+            choose.style.display = "block";
+            choose2.style.display = "block";
+            break;
+        case "state11":
+            document.getElementById("state").setAttribute("class", "state13");
+            document.getElementById("next").setAttribute("class", "state13b");
+            button.style.display = "block";
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            break;
+        case "state12":
+            document.getElementById("state").setAttribute("class", "state5");
+
+            document.getElementById("next").setAttribute("class", "state5b");      
+            button.style.display = "block";
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            break;
+        case "state13":
+            document.getElementById("state").setAttribute("class", "state16");
+            document.getElementById("next").setAttribute("class", "state16b");
+            
+            break;
+        case "state14":
+            document.getElementById("state").setAttribute("class", "state17");
+            document.getElementById("next").setAttribute("class", "state17b");
+            
+            break;
+        case "state15":
+            document.getElementById("state").setAttribute("class", "state18");
+            document.getElementById("next").setAttribute("class", "state18b");
+            button.style.display = "block";
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            break;
+        case "state16":
+            document.getElementById("state").setAttribute("class", "state20");
+            document.getElementById("next").setAttribute("class", "state20b");
+            button.style.display = "none";
+            choose.style.display = "block";
+            choose2.style.display = "block";
+            break;
+        case "state17":
+            document.getElementById("state").setAttribute("class", "state21");
+            document.getElementById("next").setAttribute("class", "state21b");
+           
+            break;
+        case "state18":
+            document.getElementById("state").setAttribute("class", "state22");
+            document.getElementById("next").setAttribute("class", "state22b");
+           
+            break;
+        case "state20":
+            document.getElementById("state").setAttribute("class", "state23");
+            document.getElementById("next").setAttribute("class", "state23b");
+            document.getElementById("re").setAttribute("class", "state23r");
+            document.getElementById("web").setAttribute("class", "state23w");
+            button.style.display = "none";
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            webs.style.display = "block";
+            res.style.display = "block";
+            break;
+        
+        case "state22":
+            document.getElementById("state").setAttribute("class", "state25");
+            document.getElementById("next").setAttribute("class", "state25b");
+            document.getElementById("re").setAttribute("class", "state25r");
+            document.getElementById("web").setAttribute("class", "state25w");
+            button.style.display = "none";
+            webs.style.display = "block";
+            res.style.display = "block";
+            break;
+        case "state21":
+            document.getElementById("state").setAttribute("class", "state24");
+            document.getElementById("next").setAttribute("class", "state24b");
+            document.getElementById("re").setAttribute("class", "state24r");
+            document.getElementById("web").setAttribute("class", "state24w");
+            button.style.display = "none";
+            webs.style.display = "block";
+            res.style.display = "block";
+            break;
+        case "state23":
+                document.getElementById("state").setAttribute("class", "state1");
+
+                document.getElementById("next").setAttribute("class", "state1b");                
+                webs.style.display = "none";
+                res.style.display = "none";
+                button.style.display = "block";
+                break;
+        case "state24":
+                document.getElementById("state").setAttribute("class", "state1");
+
+                document.getElementById("next").setAttribute("class", "state1b");                
+                webs.style.display = "none";
+                res.style.display = "none";
+                button.style.display = "block";
+                break;
+        case "state25":
+                document.getElementById("state").setAttribute("class", "state1");
+
+                document.getElementById("next").setAttribute("class", "state1b");                
+                webs.style.display = "none";
+                res.style.display = "none";
+                button.style.display = "block";
+                break;
+        case "state19":
+                document.getElementById("state").setAttribute("class", "state1");
+
+                document.getElementById("next").setAttribute("class", "state1b");                
+                webs.style.display = "none";
+                res.style.display = "none";
+                button.style.display = "block";
+                break;
+        case "stateex":
+            document.getElementById("state").setAttribute("class", "state15");
+            document.getElementById("next").setAttribute("class", "state15b");
+            choose.style.display = "block";
+            choose2.style.display = "block";
+            button.style.display = "none";
+            break;
+        default:
+            document.getElementById("state").setAttribute("class", "state1");
+            document.getElementById("next").setAttribute("class", "state1b");
+        
+        }
+        }
+
+        function changenot(){
+        var button = document.getElementById('next');
+        var state = document.getElementById("state");
+        var choose = document.getElementById("choose");
+        var choose2 = document.getElementById("choose2");
+        var webs = document.getElementById("web");
+        var res = document.getElementById("re");
+            switch(state.className) {
+        case "state4":
+            document.getElementById("state").setAttribute("class", "state6");
+            document.getElementById("next").setAttribute("class", "state6b");
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            button.style.display = "block";
+            break;
+        case "state11":
+            document.getElementById("state").setAttribute("class", "state14");
+            document.getElementById("next").setAttribute("class", "state14b");
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            button.style.display = "block";
+            break;
+        case "state12":
+            document.getElementById("state").setAttribute("class", "stateex");
+            document.getElementById("next").setAttribute("class", "stateexb");
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            button.style.display = "block";
+            break;
+        
+        case "state15":
+            document.getElementById("state").setAttribute("class", "state19");
+            document.getElementById("next").setAttribute("class", "state19b");
+            document.getElementById("re").setAttribute("class", "state19r");
+            document.getElementById("web").setAttribute("class", "state19w");
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            webs.style.display = "block";
+            res.style.display = "block";
+            break;
+        case "state20":
+            document.getElementById("state").setAttribute("class", "state24");
+            document.getElementById("next").setAttribute("class", "state24b");
+            document.getElementById("re").setAttribute("class", "state24r");
+            document.getElementById("web").setAttribute("class", "state24w");
+            choose.style.display = "none";
+            choose2.style.display = "none";
+            webs.style.display = "block";
+            res.style.display = "block";
+            break;
+        default:
+            document.getElementById("state").setAttribute("class", "state1");
+            document.getElementById("next").setAttribute("class", "state1b");
+        }
+        
+        }
+    </script>
+</head>
+<body id="state">
+    <button onclick="changeimg()" id="next" class="state1b">
+    </button>
+    <button onclick="changeimg()" id="choose" class="but2">
+    </button>
+    <button onclick="changenot()" id="choose2" class="but3">
+    </button>
+    <button id="web"> <a href="../multi-web/index2.html">
+    </a></button>
+    <button onclick="changeimg()" id="re" class="but4">
+    </button>
+</body>
+</html>
